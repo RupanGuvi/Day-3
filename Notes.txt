@@ -1,0 +1,170 @@
+Functions :- set of statements that perform specific tasks.
+syntax:-
+function functionname(parameter){
+    // set of statements
+}
+//functioncall
+functionname()
+
+=>function will always have return
+return
+=> to reduce the number of time code get executed
+=> one function will always have only one return
+
+/*without function
+var a =10;
+var b =20;
+var c = a+b;
+console.log(c);
+*/
+/*with function but with no return
+function add(a,b){
+  console.log(a+b);
+}
+function sub(a,b){
+console.log(a-b)
+}
+add(10,20)
+sub(20,10)
+*/
+/*
+function arithmetic(a,b){
+    console.log(a+b);
+    console.log(a-b);
+    console.log(a*b);
+    console.log(a%b);
+}
+arithmetic(60,20)
+arithmetic(100,50)
+*/
+/*with return
+function add (a,b){
+    return a+b
+}
+add(10,20)
+*/
+/* with multiple returns
+function arithmetic (a,b){
+    return [a+b,a-b,a*b,a%b]
+}
+console.log(arithmetic(50,20));
+
+function arithmetic1 (a,b){
+    return {
+        sum: a+b,
+        difference :a-b,
+        product: a*b,
+        reminder: a%b
+    }
+}
+console.log(arithmetic1(50,20));
+*/
+
+Types of function:-
+  1.Normal Function:-
+  /*
+print even numbers in an array [1,2,3,4,5,6,7,8,9,10]
+ Normal Function
+var result = [];
+function even (arr){
+for(var i =0; i<=arr.length-1;i=i+1){
+    if(arr[i]%2===0){
+        result.push(arr[i])
+    }
+}
+return result
+
+}
+console.log(even([1,2,3,4,5,6,7,8,9,10]));
+*/
+  2.Annonyomus Function
+  /*
+Annonyomus Function
+var result = [];
+ var a= function (arr){
+for(var i =0; i<=arr.length-1;i=i+1){
+    if(arr[i]%2===0){
+        result.push(arr[i])
+    }
+}
+return result
+
+}
+console.log(a([1,2,3,4,5,6,7,8,9,10]));
+*/
+3.IIFE Function
+  /*
+IIFE Function
+var result = [];
+(function (arr){
+    for(var i =0; i<=arr.length-1;i=i+1){
+        if(arr[i]%2===0){
+            result.push(arr[i])
+        }
+    }
+    console.log(result);
+    
+})([1,2,3,4,5,6,7,8,9,10])
+*/
+  4. Arrow Function
+  /*
+arrow function
+var result = [];
+var even = (arr)=>{
+    for(var i =0; i<=arr.length-1;i=i+1){
+        if(arr[i]%2===0){
+            result.push(arr[i])
+        }
+    }
+    return result
+}
+console.log(even([1,2,3,4,5,6,7,8,9,10]));
+*/
+Task:- 
+1. Find the median of two sorted arrays.
+2. Rotate and array by k times.
+
+Looping
+  1.While loop:-
+  while(condition){
+    statement
+  }
+
+  example:- 
+   /* while loop
+let a = 0;
+let b = 0;
+while (a<3){
+    a++;
+    b += a;
+}
+*/
+/* Infinite loop example it is a bad approach
+while (true){
+    console.log("Hello World");
+    
+}
+*/
+
+  2.do while loop :-
+  syntax:- 
+   do {
+          statement
+   }
+   while (condition);
+   
+   example:- 
+   /* Do while
+let a =0;
+do{
+    a += 1;
+    console.log(a);
+    
+}while(a<5)
+*/
+
+  3.For loop
+  4.for of loop
+  5.for in loop
+  6.for each loop
+If-else
